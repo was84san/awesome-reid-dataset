@@ -49,6 +49,51 @@ Person re-identification has drawn intensive attention in the computer vision so
 | [DeepSportradar-ReID](#deepsportradar-reid)             | 2022      | 486           | -       | 9529          | Hand       | Vary            |        ✔         |            |
 
 
+
+| Dataset | Release time | # identities | # cameras | # images | Label method | Crop size | Multi-shot | Tracking sequences | Full frames availability |
+|-|-|-|-|-|-|-|-|-|
+
+| PKU SketchRe-ID | 2018 | 200 | 2 | 400 | Hand | - |  |  |  |
+| VIPeR | 2007 | 632 | 2 | 1264 | Hand | 128X48 |  |  |   |
+| QMUL iLIDS | 2009 | 119 | 2 | 476 | Hand | Vary | ✔ |  |   |
+| CAVIAR4ReID | 2011 | 72 | 2 | 220 | Hand | Vary | ✔ |   | |
+| PRID2011 | 2011 | 201 | 2 | 934 | Hand | 128X64 | ✔ | ✔ | ✔* |
+| V47 | 2011 | 47 | 2 | 752 | Hand | Vary | ✔ | ✔ |   |
+| iLIDS-VID | 2014 | 300 | 2 | 495 | Hand | Vary | ✔ | ✔ |   |
+| CUHK01 | 2012 | 971 | 2 | 3884 | Hand | 160X60 | ✔ |  |   |
+
+| GRID | 2009 | 1025 | 8 | 1275 | Hand | Vary |  |  |    |
+| 3DPeS | 2011 | 192 | 8 | 1011 | Hand | Vary | ✔ | ✔* |    |
+| Shinpuhkan Dataset | 2014 | 24 | 16 |  | Hand | 128X48 | ✔ | ✔ |    |
+| CUHK02 | 2013 | 1816 | 10(5 pairs) | 7264 | Hand | 160X60 | ✔ |   | |
+| RAiD | 2014 | 43 | 4 | 6920 | Hand | 128X64 | ✔ |   | |
+| WARD | 2012 | 70 | 3 | 4786 | Hand | 128X48 | ✔ | ✔ |    |
+| Market1501 | 2015 | 1501 | 6 | 32217 | Hand/DPM | 128X64 | ✔ |   | |
+
+| PKU-Reid | 2016 | 114 | 2 | 1824 | Hand | 128X64 |   |   | |
+| Airport | 2017 | 9651 | 6 | 39902 | ACF | 128X64 | ✔ |   | |
+| CUHK03 | 2014 | 1467 | 10(5 pairs) | 13164 | Hand/DPM | Vary | ✔ |   | |
+| DukeMTMC4ReID | 2017 | 1852 | 8 | 46261 | Doppia | Vary | ✔ | ✔ | ✔ |
+| MARS | 2016 | 1261 | 6 | 1191003 | DPM+GMMCP | 256X128 | ✔ | ✔ |   |
+| DukeMTMC-reID | 2017 | 1812 | 8 | 36441 | Hand | Vary | ✔ | ✔ | ✔ |
+
+| MSMT17 | 2018 | 4101 | 15 | 126441 | Faster RCNN | Vary | ✔ |   | |
+| PRW | 2016 | 932 | 6 | 34304 | Hand | vary | ✔ | ✔ | ✔ |
+| RPIfield | 2018 | 112 | 12 | 601,581 | ACF | Vary | ✔ | ✔ |   |
+| LPW | 2018 | 2,731 | 3,4,4 | 592,438 | Detector+NN+Hand | - | ✔ | ✔ |   |
+| ThermalWorld | 2018 | 516 | 20 | 15,118 | Hand | - |   |   | |
+| SoccerNet-ReID | 2022 | 243,432 | - | 340,993 | Hand | Vary | ✔ |   | ✔ |
+| Large scale person search | 2016 | 11934s | - | 34574 | Hand | vary |   | ✔ | |
+| DeepSportradar-ReID | 2022 | 486 | - | 9529 | Hand | Vary | ✔ |   | |
+| ETH1,2,3 | 2008/2009 | 85, 35, 28 | 1 | 8580 | Hand | Vary | ✔ | ✔ | ✔ |
+| SAIVT-Softbio | 2012 | 152 | 8 | 64472 | Hand | Vary | ✔ | ✔ | ✔ |
+
+| CASIA Gait Database B | 2015 | 124 | 11 |  | Background subtraction | Vary | ✔ | ✔ | ✔ |
+| MPR Drone | 2014 | 84 | 1 |  | Pyramid Features(ACF) | Vary | ✔ |  | ✔ |
+| HDA Person Dataset | 2014 | 53 | 13 | 2976 | Hand/Pyramid Features(ACF) | Vary | ✔ | ✔ | ✔ |
+
+
+
 # [VIPeR](https://vision.soe.ucsc.edu/node/178)
 This dataset contains two cameras, each of which captures one image per person. It also provides the viewpoint angle of each image. Although it has been tested by many researchers, it's still one of the most challenging datasets. Ryan Layne provides the attribute annotation of VIPeR here.
 
