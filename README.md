@@ -48,29 +48,39 @@ Person re-identification has drawn intensive attention in the computer vision so
 | [SoccerNet-ReID](#soccernet-reid)             | 2022      | 243,432           | -       | 340,993          | Hand       | Vary            |                 |       ✔     |
 | [DeepSportradar-ReID](#deepsportradar-reid)             | 2022      | 486           | -       | 9529          | Hand       | Vary            |        ✔         |            |
 
-
-| Dataset                    | Release time     | # identities | # cameras   | # images | Label method               | Crop size | Multi-shot | Tracking sequences | Full frames availability |
-|----------------------------|------------------|--------------|-------------|----------|----------------------------|-----------|------------|--------------------|--------------------------|
-| [MPR Drone](#mpr-drone)                 | 2014             | 84           | 1           |          | Pyramid Features(ACF)      | Vary      | ✔          |                    | ✔                        |
-| [Shinpuhkan Dataset](#shinpuhkan-dataset)| 2014             | 24           | 16          |          | Hand                       | 128X48    | ✔          | ✔                  |                          |
-| [CASIA Gait Database B](#casia-gait-database-b)| 2015(*see below) | 124 | 11       |          | Background subtraction     | Vary      | ✔          | ✔                  | ✔                        |
-| [QMUL iLIDS](#qmul-ilids)                | 2009             | 119          | 2           | 476      | Hand                       | Vary      | ✔          |                    |                          |
-| [V47](#v47)                             | 2011             | 47           | 2           | 752      | Hand                       | Vary      | ✔          |                    | ✔                        |
-| [3DPeS](#3dpes)                         | 2011             | 192          | 8           | 1011     | Hand                       | Vary      | ✔          |                    | ✔*                       |
-| [GRID](#grid)                           | 2009             | 1025         | 8           | 1275     | Hand                       | Vary      |            |                    |                          |
-| [VIPeR](#viper)                         | 2007             | 632          | 2           | 1264     | Hand                       | 128X48    |            |                    |                          |
-| [CAVIAR4ReID](#caviar4reid)             | 2011             | 72           | 2           | 1220     | Hand                       | Vary      | ✔          |                    |                          |
-| [DeepSportradar-ReID](#deepsportradar-reid)| 2022         | 486           | -           | 9529     | Hand                       | Vary      | ✔          |                    |                          |
-| [RAiD](#raid)                           | 2014             | 43           | 4           | 6920     | Hand                       | 128X64    | ✔          |                    |                          |
-| [CUHK02](#cuhk02)                       | 2013             | 1816         | 10(5 pairs) | 7264     | Hand                       | 160X60    | ✔          |                    |                          |
-| [ETH1,2,3](#eth1,2,3)                   | 2007             | 85, 35, 28     | 1         | 8580     | Hand                       | Vary      | ✔          | ✔                  | ✔                        |
-| [CUHK01](#cuhk01)                       | 2012             | 971          | 2           | 3884     | Hand                       | 160X60    | ✔          |                    |                          |
-| [WARD](#ward)                           | 2012             | 70           | 3           | 4786     | Hand                       | 128X48    | ✔          | ✔                  |                          |
-| [HDA Person Dataset](#hda-person-dataset)| 2014           | 53           | 13          | 2976     | Hand/Pyramid Features(ACF) | Vary      | ✔          | ✔                  | ✔                        |
-| [PKU-Reid](#pku-reid)                   | 2016             | 114          | 2           | 1824     | Hand                       | 128X64    |            |                    |                          |
-| [CUHK03](#cuhk03)                       | 2014             | 1467         | 10(5 pairs) | 13164    | Hand/DPM                   | Vary      | ✔          |                    |                          |
-| [Market1501](#market1501)               | 2015             | 1501         | 6           | 32217    | Hand/DPM                   | 128X64    | ✔          |                    |                          |
-| [PRID2011](#prid2011)                   | 2011             | 934          | 2           | 24541    | Hand                       | 128X64    |
+| Dataset                    | Release time | # cameras     | # images  |
+|----------------------------|--------------|---------------|----------|
+| [PKU SketchRe-ID](#pku-sketchre-id)          | 2018         | 2          | 400      |
+| [QMUL iLIDS](#qmul-ilids)                  | 2009         | 2          | 476      |
+| [V47](#v47)                                | 2011         | 2          | 752      |
+| [3DPeS](#3dpes)                            | 2011         | 8          | 1011     |
+| [VIPeR](#viper)                            | 2007         | 2          | 1264     |
+| [GRID](#grid)                              | 2009         | 8          | 1275     |
+| [CAVIAR4ReID](#caviar4reid)                | 2011         | 2          | 1220     |
+| [PKU-Reid](#pku-reid)                      | 2016         | 2          | 1824     |
+| [HDA Person Dataset](#hda-person-dataset)  | 2014         | 13         | 2976     |
+| [CUHK01](#cuhk01)                          | 2012         | 2          | 3884     |
+| [WARD](#ward)                              | 2012         | 3          | 4786     |
+| [DeepSportradar-ReID](#deepsportradar-reid)| 2022         | -          | 9529     |
+| [RAiD](#raid)                              | 2014         | 4          | 6920     |
+| [CUHK02](#cuhk02)                          | 2013         | 10(5 pairs)| 7264     |
+| [ETH1,2,3](#eth1,2,3)                      | 2007         | 1          | 8580     |
+| [PRID2011](#prid2011)                      | 2011         | 2          | 24541    |
+| [ThermalWorld](#thermalworld)              | 2018         | 20         | 15118    |
+| [Market1501](#market1501)                  | 2015         | 6          | 32217    |
+| [PRW](#prw)                                | 2016         | 6          | 34304    |
+| [Large scale person search](#large-scale-person-search) | 2016 | -       | 34574    |
+| [DukeMTMC-reID](#dukemtmc-reid/dukemtmc4reid) | 2017       | 8        | 36441    |
+| [Airport](#airport)                        | 2017         | 6          | 39902    |
+| [DukeMTMC4ReID](#dukemtmc-reid/dukemtmc4reid) | 2017       | 8        | 46261    |
+| [CUHK03](#cuhk03)                          | 2014         | 10(5 pairs)| 13164    |
+| [iLIDS-VID](#ilids-vid)                    | 2014         | 2          | 42495    |
+| [SAIVT-Softbio](#saivt-softbio)            | 2012         | 8          | 64472    |
+| [MSMT17](#msmt17)                          | 2018         | 15         | 126441   |
+| [SoccerNet-ReID](#soccernet-reid)          | 2022         | -          | 340993   |
+| [LPW](#lpw)                                | 2018         | 3,4,4      | 592438   |
+| [RPIfield](#rpifield)                      | 2018         | 12         | 601581   |
+| [MARS](#mars)                              | 2016         | 6          | 1191003  |
 
 
 # [VIPeR](https://vision.soe.ucsc.edu/node/178)
